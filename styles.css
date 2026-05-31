@@ -138,6 +138,10 @@ main {
   padding-left: 1.25rem;
 }
 
+.panel a {
+  color: #163a5f;
+}
+
 .contents-layout {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -184,6 +188,28 @@ main {
   margin: 1rem 0 0.45rem;
 }
 
+.resource-links li + li {
+  margin-top: 0.35rem;
+}
+
+.import-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.import-card {
+  border: 1px solid #d7e0e8;
+  background: #f9fbfc;
+  padding: 1rem;
+}
+
+.import-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
 .policy-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -205,6 +231,7 @@ main {
 @media (max-width: 920px) {
   .layout,
   .contents-layout,
+  .import-grid,
   .policy-grid,
   .header-row {
     grid-template-columns: 1fr;
