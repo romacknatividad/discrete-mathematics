@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discrete Mathematics Video Archive</title>
+  <meta
+    name="description"
+    content="Interactive video lecture archive for discrete mathematics organized by topics and subtopics."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-wrap">
+      <p class="department-line">Department of Computer Science</p>
+      <div class="header-row">
+        <div>
+          <h1>Discrete Mathematics Video Archive</h1>
+          <p class="course-subtitle">Channel-based lecture archive organized by topic and subtopic</p>
+        </div>
+        <div class="header-meta">
+          <p><a href="index.html">Back to course page</a></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="intro-block">
+      <p>
+        The archive is organized like a television guide. Each channel represents a major topic,
+        and each playlist represents a focused subtopic drawn from the source lecture index.
+      </p>
+    </section>
+
+    <section class="video-archive" data-video-archive>
+      <aside class="channel-panel panel">
+        <div class="section-heading">
+          <h2>Channels</h2>
+          <p>Choose a major topic.</p>
+        </div>
+        <div class="channel-list" id="channel-list"></div>
+      </aside>
+
+      <section class="screen-panel">
+        <div class="screen-frame panel">
+          <div class="screen-header">
+            <div>
+              <p class="screen-label">Now Showing</p>
+              <h2 id="archive-topic-title">Introduction and Preliminaries</h2>
+            </div>
+            <div class="screen-meta">
+              <span id="archive-playlist-count">4 playlists</span>
+              <a id="archive-playlist-link" href="#" target="_blank" rel="noreferrer">Open full playlist</a>
+            </div>
+          </div>
+          <div class="video-player-shell">
+            <iframe
+              id="archive-player"
+              title="Discrete mathematics playlist player"
+              src=""
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="playlist-panel panel">
+          <div class="section-heading">
+            <h2>Playlists</h2>
+            <p>Select a subtopic within the current channel.</p>
+          </div>
+          <div class="playlist-list" id="playlist-list"></div>
+        </div>
+      </section>
+
+      <aside class="guide-panel panel">
+        <div class="section-heading">
+          <h2 id="guide-title">What is Discrete Math</h2>
+          <p id="guide-description">Short lesson guide for the selected playlist.</p>
+        </div>
+        <ol class="episode-list" id="episode-list"></ol>
+        <div class="guide-footer">
+          <a href="https://mathispower4u.com/discrete-math.php" target="_blank" rel="noreferrer">Open source lecture index</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-wrap">
+      <p>Discrete Mathematics Video Archive | Department of Computer Science | Your University</p>
+    </div>
+  </footer>
+
+  <script src="video-archive.js"></script>
+</body>
+</html>

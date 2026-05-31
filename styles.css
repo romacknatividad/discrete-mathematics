@@ -288,6 +288,142 @@ main {
   font-size: 0.95rem;
 }
 
+.video-archive {
+  display: grid;
+  grid-template-columns: 260px 1fr 320px;
+  gap: 1rem;
+  align-items: start;
+}
+
+.screen-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.screen-frame {
+  background:
+    linear-gradient(180deg, #1e2730 0%, #111820 100%);
+  color: #f3f7fb;
+  border-color: #25394d;
+}
+
+.screen-frame h2,
+.screen-frame p,
+.screen-frame a,
+.screen-frame span {
+  color: inherit;
+}
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.screen-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b6c8d8;
+}
+
+.screen-meta {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: end;
+  font-size: 0.92rem;
+}
+
+.video-player-shell {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 1px solid #38516b;
+  background:
+    radial-gradient(circle at center, rgba(110, 149, 184, 0.2), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04) 1px, transparent 1px, transparent 3px),
+    #091018;
+}
+
+.video-player-shell iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.channel-list,
+.playlist-list {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.channel-button,
+.playlist-button {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  border: 1px solid #cfd8e1;
+  background: #f7f9fb;
+  color: #1d2731;
+  text-align: left;
+  cursor: pointer;
+}
+
+.channel-button {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.85rem 0.9rem;
+}
+
+.channel-button.is-active,
+.playlist-button.is-active {
+  border-color: #163a5f;
+  background: #e9f0f6;
+}
+
+.channel-number {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4b5f73;
+}
+
+.channel-name {
+  font-weight: 700;
+}
+
+.playlist-button {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem;
+}
+
+.playlist-button strong {
+  font-size: 1rem;
+}
+
+.playlist-button span {
+  color: #4b5f73;
+  font-size: 0.92rem;
+}
+
+.episode-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.episode-list li + li {
+  margin-top: 0.45rem;
+}
+
+.guide-footer {
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #e2e8ee;
+}
+
 @media (max-width: 920px) {
   .layout,
   .contents-layout,
@@ -295,6 +431,7 @@ main {
   .import-grid,
   .policy-grid,
   .mathematician-grid,
+  .video-archive,
   .header-row {
     grid-template-columns: 1fr;
     display: grid;
@@ -314,6 +451,15 @@ main {
   .panel,
   .topic-content {
     padding: 1rem;
+  }
+
+  .screen-header {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .screen-meta {
+    justify-items: start;
   }
 
   .mathematician-card {
