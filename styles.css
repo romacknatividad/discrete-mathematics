@@ -288,6 +288,42 @@ main {
   font-size: 0.95rem;
 }
 
+.book-note-grid,
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  border: 1px solid #d7e0e8;
+  background: #fdfefe;
+  padding: 1rem;
+}
+
+.book-card h3 {
+  margin-bottom: 0.35rem;
+}
+
+.book-meta {
+  margin: 0 0 0.75rem;
+  color: #4b5f73;
+  font-size: 0.95rem;
+}
+
+.book-badge {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.45rem;
+  border: 1px solid #cfd8e1;
+  background: #f7f9fb;
+  color: #35516b;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .video-archive {
   display: grid;
   grid-template-columns: 260px 1fr 320px;
@@ -431,6 +467,8 @@ main {
   .import-grid,
   .policy-grid,
   .mathematician-grid,
+  .book-note-grid,
+  .book-grid,
   .video-archive,
   .header-row {
     grid-template-columns: 1fr;
