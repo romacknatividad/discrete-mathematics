@@ -8,328 +8,232 @@
     name="description"
     content="Course homepage for an undergraduate discrete mathematics course designed for computer science students."
   >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="site-shell topbar">
-      <div>
-        <p class="kicker">Department of Computer Science</p>
-        <h1>Discrete Mathematics for Computer Science</h1>
-      </div>
-      <div class="course-code">
-        <strong>CS 2XX</strong>
-        <span>Undergraduate Course Homepage</span>
+    <div class="page-wrap">
+      <p class="department-line">Department of Computer Science</p>
+      <div class="header-row">
+        <div>
+          <h1>Discrete Mathematics for Computer Science</h1>
+          <p class="course-subtitle">CS 2XX | Semester 1 | Undergraduate Course Page</p>
+        </div>
+        <div class="header-meta">
+          <p><strong>Instructor:</strong> Dr. Your Name</p>
+          <p><strong>Email:</strong> your.name@university.edu</p>
+        </div>
       </div>
     </div>
   </header>
 
-  <main class="site-shell">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="kicker">Course Overview</p>
-        <p class="lead">
-          This course introduces the mathematical structures and proof methods that support
-          algorithm design, software correctness, graph modeling, and formal reasoning in computer science.
-        </p>
-      </div>
-      <div class="hero-actions">
-        <a href="#contents" class="button button-primary">Course Contents</a>
-        <a href="#policies" class="button">Policies</a>
-      </div>
+  <main class="page-wrap">
+    <section class="intro-block">
+      <p>
+        This course introduces the core ideas of discrete mathematics used in computer science,
+        including logic, proof, sets, functions, counting, recurrence relations, graph theory,
+        and formal reasoning.
+      </p>
     </section>
 
-    <section class="grid grid-two">
-      <article class="panel">
-        <h2>Course Information</h2>
-        <dl class="info-list">
-          <div><dt>Instructor</dt><dd>Dr. Your Name</dd></div>
-          <div><dt>Email</dt><dd>your.name@university.edu</dd></div>
-          <div><dt>Lectures</dt><dd>Tue/Thu, 10:30 AM to 11:45 AM</dd></div>
-          <div><dt>Location</dt><dd>Engineering Hall 210</dd></div>
-          <div><dt>Office Hours</dt><dd>Mon 2:00 PM to 4:00 PM, Wed 1:00 PM to 2:00 PM</dd></div>
-          <div><dt>Prerequisite</dt><dd>Introductory programming or instructor permission</dd></div>
-        </dl>
-      </article>
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <h2>Course Information</h2>
+          <dl class="info-list">
+            <div><dt>Lectures</dt><dd>Tue/Thu, 10:30 AM to 11:45 AM</dd></div>
+            <div><dt>Location</dt><dd>Engineering Hall 210</dd></div>
+            <div><dt>Office Hours</dt><dd>Mon 2:00 PM to 4:00 PM, Wed 1:00 PM to 2:00 PM</dd></div>
+            <div><dt>Prerequisite</dt><dd>Introductory programming or instructor permission</dd></div>
+          </dl>
+        </section>
 
-      <article class="panel">
-        <h2>Course Description</h2>
-        <p>
-          Discrete mathematics provides the foundation for precise reasoning in computing.
-          Students will learn how to write proofs, analyze combinatorial structures, work with
-          graphs and relations, and apply discrete methods to computational problems.
-        </p>
-        <p>
-          The course emphasizes clarity of argument, correct use of definitions, and the ability
-          to translate between mathematical ideas and computer science applications.
-        </p>
-      </article>
-    </section>
+        <section class="panel">
+          <h2>Assessment</h2>
+          <ul class="plain-list">
+            <li>Homework: 30%</li>
+            <li>Quizzes: 10%</li>
+            <li>Midterm Exam: 20%</li>
+            <li>Project or Portfolio: 15%</li>
+            <li>Final Exam: 25%</li>
+          </ul>
+        </section>
 
-    <section class="grid grid-three">
-      <article class="panel">
-        <h2>Learning Outcomes</h2>
-        <ul>
-          <li>Construct and evaluate mathematical proofs using standard proof techniques.</li>
-          <li>Model discrete structures using sets, functions, relations, and graphs.</li>
-          <li>Solve counting problems and analyze recurrence relations.</li>
-          <li>Connect discrete mathematics concepts to algorithms and computation.</li>
-        </ul>
-      </article>
+        <section class="panel">
+          <h2>Texts and Resources</h2>
+          <ul class="plain-list">
+            <li>Primary textbook: Rosen or equivalent</li>
+            <li>Weekly notes and worksheets</li>
+            <li>Problem sets via the LMS</li>
+            <li>Optional tools: LaTeX and graph software</li>
+          </ul>
+        </section>
+      </aside>
 
-      <article class="panel">
-        <h2>Assessment</h2>
-        <ul class="compact-list">
-          <li><strong>Homework:</strong> 30%</li>
-          <li><strong>Quizzes:</strong> 10%</li>
-          <li><strong>Midterm Exam:</strong> 20%</li>
-          <li><strong>Project or Problem Portfolio:</strong> 15%</li>
-          <li><strong>Final Exam:</strong> 25%</li>
-        </ul>
-      </article>
+      <div class="main-column">
+        <section class="panel">
+          <h2>Course Description</h2>
+          <p>
+            The course emphasizes correct mathematical reasoning and its application to computing.
+            Students learn how to construct proofs, interpret formal statements, model discrete structures,
+            and analyze the mathematical behavior of algorithms and systems.
+          </p>
+        </section>
 
-      <article class="panel">
-        <h2>Texts and Resources</h2>
-        <ul>
-          <li>Primary textbook: Rosen or an equivalent discrete mathematics text.</li>
-          <li>Weekly lecture notes and worksheets.</li>
-          <li>Problem sets distributed through the course LMS.</li>
-          <li>Optional tools: LaTeX, Overleaf, and graph visualization software.</li>
-        </ul>
-      </article>
-    </section>
+        <section class="panel">
+          <h2>Learning Outcomes</h2>
+          <ul>
+            <li>Construct proofs using direct argument, contradiction, contrapositive, cases, and induction.</li>
+            <li>Use sets, functions, relations, and graphs to model computational problems.</li>
+            <li>Solve counting problems and analyze recursive definitions and recurrence relations.</li>
+            <li>Explain how discrete mathematics supports algorithmic and formal reasoning.</li>
+          </ul>
+        </section>
 
-    <section id="contents" class="contents-section">
-      <div class="section-heading">
-        <p class="kicker">Course Contents</p>
-        <h2>Major Topics</h2>
-        <p class="section-copy">
-          Select a topic to focus on the main ideas, subtopics, and representative applications.
-        </p>
-      </div>
+        <section id="contents" class="panel">
+          <div class="section-heading">
+            <h2>Course Contents</h2>
+            <p>Select one topic to view its scope and key subtopics.</p>
+          </div>
 
-      <div class="tabs" data-tabs>
-        <div class="tab-list" role="tablist" aria-label="Course topics">
-          <button class="tab-button is-active" id="tab-logic" role="tab" aria-selected="true" aria-controls="panel-logic" data-tab-target="logic">Logic and Proof</button>
-          <button class="tab-button" id="tab-sets" role="tab" aria-selected="false" aria-controls="panel-sets" data-tab-target="sets">Sets, Functions, Relations</button>
-          <button class="tab-button" id="tab-number" role="tab" aria-selected="false" aria-controls="panel-number" data-tab-target="number">Number Theory and Induction</button>
-          <button class="tab-button" id="tab-counting" role="tab" aria-selected="false" aria-controls="panel-counting" data-tab-target="counting">Counting and Recurrences</button>
-          <button class="tab-button" id="tab-graphs" role="tab" aria-selected="false" aria-controls="panel-graphs" data-tab-target="graphs">Graphs and Trees</button>
-          <button class="tab-button" id="tab-logic-systems" role="tab" aria-selected="false" aria-controls="panel-logic-systems" data-tab-target="logic-systems">Boolean Logic and Models</button>
-        </div>
+          <div class="contents-layout" data-tabs>
+            <nav class="topic-nav" role="tablist" aria-label="Course topics">
+              <button class="topic-tab is-active" id="tab-1" role="tab" aria-selected="true" aria-controls="panel-1" data-tab-target="topic-1">1. Logic and Proof</button>
+              <button class="topic-tab" id="tab-2" role="tab" aria-selected="false" aria-controls="panel-2" data-tab-target="topic-2">2. Sets, Functions, and Relations</button>
+              <button class="topic-tab" id="tab-3" role="tab" aria-selected="false" aria-controls="panel-3" data-tab-target="topic-3">3. Number Theory and Induction</button>
+              <button class="topic-tab" id="tab-4" role="tab" aria-selected="false" aria-controls="panel-4" data-tab-target="topic-4">4. Counting Techniques</button>
+              <button class="topic-tab" id="tab-5" role="tab" aria-selected="false" aria-controls="panel-5" data-tab-target="topic-5">5. Recurrence Relations</button>
+              <button class="topic-tab" id="tab-6" role="tab" aria-selected="false" aria-controls="panel-6" data-tab-target="topic-6">6. Graphs and Trees</button>
+              <button class="topic-tab" id="tab-7" role="tab" aria-selected="false" aria-controls="panel-7" data-tab-target="topic-7">7. Boolean Logic and Formal Models</button>
+            </nav>
 
-        <div class="tab-panels">
-          <section class="tab-panel is-active" id="panel-logic" role="tabpanel" aria-labelledby="tab-logic" data-tab-panel="logic">
-            <h3>Logic and Proof</h3>
-            <p>
-              Students begin with formal statements and valid inference. This unit develops the proof techniques
-              required throughout the rest of the course.
-            </p>
-            <div class="topic-grid">
-              <div>
-                <h4>Core Ideas</h4>
+            <div class="topic-content">
+              <section class="topic-panel is-active" id="panel-1" role="tabpanel" aria-labelledby="tab-1" data-tab-panel="topic-1">
+                <h3>Logic and Proof</h3>
+                <p>This unit establishes the language of mathematics and the proof methods used throughout the course.</p>
+                <h4>Main Subtopics</h4>
                 <ul>
                   <li>Propositions, predicates, and quantifiers</li>
                   <li>Logical equivalence and implication</li>
-                  <li>Direct proof, contradiction, contrapositive, and proof by cases</li>
+                  <li>Direct proof, contradiction, contrapositive, and cases</li>
                 </ul>
-              </div>
-              <div>
-                <h4>Applications</h4>
-                <ul>
-                  <li>Program specifications</li>
-                  <li>Reasoning about correctness</li>
-                  <li>Translating informal claims into formal mathematical statements</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+                <h4>Computer Science Connection</h4>
+                <p>Students use logical precision to reason about specifications, correctness, and formal statements in computing.</p>
+              </section>
 
-          <section class="tab-panel" id="panel-sets" role="tabpanel" aria-labelledby="tab-sets" data-tab-panel="sets" hidden>
-            <h3>Sets, Functions, and Relations</h3>
-            <p>
-              This unit introduces the basic language used to model discrete systems and data relationships.
-            </p>
-            <div class="topic-grid">
-              <div>
-                <h4>Core Ideas</h4>
+              <section class="topic-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" data-tab-panel="topic-2" hidden>
+                <h3>Sets, Functions, and Relations</h3>
+                <p>This unit provides the vocabulary for describing collections, mappings, and structured relationships.</p>
+                <h4>Main Subtopics</h4>
                 <ul>
                   <li>Set operations and power sets</li>
-                  <li>Functions, inverse images, injective and surjective mappings</li>
+                  <li>Functions, images, inverse images, injective and surjective functions</li>
                   <li>Relations, equivalence relations, and partial orders</li>
                 </ul>
-              </div>
-              <div>
-                <h4>Applications</h4>
-                <ul>
-                  <li>Database relationships and state modeling</li>
-                  <li>Abstraction of computational structures</li>
-                  <li>Classification and partitioning problems</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+                <h4>Computer Science Connection</h4>
+                <p>These structures are used in data modeling, abstraction, classification, and state representation.</p>
+              </section>
 
-          <section class="tab-panel" id="panel-number" role="tabpanel" aria-labelledby="tab-number" data-tab-panel="number" hidden>
-            <h3>Number Theory and Induction</h3>
-            <p>
-              These topics support recursive reasoning, algorithm analysis, and modular computation.
-            </p>
-            <div class="topic-grid">
-              <div>
-                <h4>Core Ideas</h4>
+              <section class="topic-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" data-tab-panel="topic-3" hidden>
+                <h3>Number Theory and Induction</h3>
+                <p>This topic links arithmetic structure with recursive mathematical reasoning.</p>
+                <h4>Main Subtopics</h4>
                 <ul>
                   <li>Divisibility, primes, and modular arithmetic</li>
                   <li>The Euclidean algorithm</li>
-                  <li>Weak and strong induction, recursive definitions</li>
+                  <li>Weak induction, strong induction, and recursive definitions</li>
                 </ul>
-              </div>
-              <div>
-                <h4>Applications</h4>
-                <ul>
-                  <li>Cryptography foundations</li>
-                  <li>Recursive algorithm correctness</li>
-                  <li>Proofs over sequences and data structures</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+                <h4>Computer Science Connection</h4>
+                <p>Applications include cryptography, recursive program correctness, and proofs over discrete processes.</p>
+              </section>
 
-          <section class="tab-panel" id="panel-counting" role="tabpanel" aria-labelledby="tab-counting" data-tab-panel="counting" hidden>
-            <h3>Counting and Recurrences</h3>
-            <p>
-              Students learn systematic methods for enumerating possibilities and describing recursive growth.
-            </p>
-            <div class="topic-grid">
-              <div>
-                <h4>Core Ideas</h4>
+              <section class="topic-panel" id="panel-4" role="tabpanel" aria-labelledby="tab-4" data-tab-panel="topic-4" hidden>
+                <h3>Counting Techniques</h3>
+                <p>This unit develops systematic methods for counting finite structures and outcomes.</p>
+                <h4>Main Subtopics</h4>
                 <ul>
-                  <li>Product and sum rules</li>
-                  <li>Permutations, combinations, and binomial coefficients</li>
-                  <li>Pigeonhole principle, inclusion-exclusion, and linear recurrences</li>
+                  <li>Sum rule and product rule</li>
+                  <li>Permutations and combinations</li>
+                  <li>Binomial coefficients, pigeonhole principle, and inclusion-exclusion</li>
                 </ul>
-              </div>
-              <div>
-                <h4>Applications</h4>
-                <ul>
-                  <li>Algorithm counting arguments</li>
-                  <li>Discrete probability preparation</li>
-                  <li>Runtime growth patterns in recursive procedures</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+                <h4>Computer Science Connection</h4>
+                <p>Counting methods support complexity analysis, probability preparation, and combinatorial reasoning.</p>
+              </section>
 
-          <section class="tab-panel" id="panel-graphs" role="tabpanel" aria-labelledby="tab-graphs" data-tab-panel="graphs" hidden>
-            <h3>Graphs and Trees</h3>
-            <p>
-              Graph theory provides a natural language for networks, search, connectivity, and hierarchical structures.
-            </p>
-            <div class="topic-grid">
-              <div>
-                <h4>Core Ideas</h4>
+              <section class="topic-panel" id="panel-5" role="tabpanel" aria-labelledby="tab-5" data-tab-panel="topic-5" hidden>
+                <h3>Recurrence Relations</h3>
+                <p>This topic focuses on recursive sequences and methods for describing growth over discrete steps.</p>
+                <h4>Main Subtopics</h4>
+                <ul>
+                  <li>Recursive definitions</li>
+                  <li>Linear recurrence relations</li>
+                  <li>Closed forms and interpretation of recursive growth</li>
+                </ul>
+                <h4>Computer Science Connection</h4>
+                <p>Recurrences are central to analyzing recursive algorithms and divide-and-conquer processes.</p>
+              </section>
+
+              <section class="topic-panel" id="panel-6" role="tabpanel" aria-labelledby="tab-6" data-tab-panel="topic-6" hidden>
+                <h3>Graphs and Trees</h3>
+                <p>This unit studies network-like structures that appear throughout computer science.</p>
+                <h4>Main Subtopics</h4>
                 <ul>
                   <li>Graphs, paths, cycles, and connectivity</li>
-                  <li>Trees, spanning trees, and traversals</li>
-                  <li>Representations and basic graph properties</li>
+                  <li>Trees, rooted trees, and spanning trees</li>
+                  <li>Basic graph representations and traversal ideas</li>
                 </ul>
-              </div>
-              <div>
-                <h4>Applications</h4>
-                <ul>
-                  <li>Network modeling</li>
-                  <li>Search algorithms</li>
-                  <li>Data structures and dependency analysis</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+                <h4>Computer Science Connection</h4>
+                <p>Graph theory supports search, networks, dependency structures, and hierarchical data representation.</p>
+              </section>
 
-          <section class="tab-panel" id="panel-logic-systems" role="tabpanel" aria-labelledby="tab-logic-systems" data-tab-panel="logic-systems" hidden>
-            <h3>Boolean Logic and Formal Models</h3>
-            <p>
-              The course concludes by connecting logical systems with digital computation and abstract machine models.
-            </p>
-            <div class="topic-grid">
-              <div>
-                <h4>Core Ideas</h4>
+              <section class="topic-panel" id="panel-7" role="tabpanel" aria-labelledby="tab-7" data-tab-panel="topic-7" hidden>
+                <h3>Boolean Logic and Formal Models</h3>
+                <p>The course concludes by connecting logic with digital systems and abstract computational models.</p>
+                <h4>Main Subtopics</h4>
                 <ul>
-                  <li>Boolean algebra and logical identities</li>
-                  <li>Switching circuits and simplification</li>
+                  <li>Boolean algebra and identities</li>
+                  <li>Logic circuits and simplification</li>
                   <li>Finite-state models and formal reasoning</li>
                 </ul>
-              </div>
-              <div>
-                <h4>Applications</h4>
-                <ul>
-                  <li>Digital logic design</li>
-                  <li>State-based computation</li>
-                  <li>Connections to automata and formal languages</li>
-                </ul>
-              </div>
+                <h4>Computer Science Connection</h4>
+                <p>These ideas support digital logic, machine models, and the study of formal computational systems.</p>
+              </section>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Weekly Expectations</h2>
+          <ol>
+            <li>Read the assigned material before each lecture.</li>
+            <li>Attend lectures and participate in worked examples.</li>
+            <li>Complete weekly problem sets with clear written solutions.</li>
+            <li>Use office hours or the course forum when clarification is needed.</li>
+          </ol>
+        </section>
+
+        <section id="policies" class="policy-grid">
+          <article class="panel">
+            <h2>Collaboration Policy</h2>
+            <p>Students may discuss ideas with others, but all submitted work must be written independently. External help, including AI tools, should be acknowledged.</p>
+          </article>
+          <article class="panel">
+            <h2>Late Work Policy</h2>
+            <p>Each student receives three late days for homework. Further extensions require prior approval or documented circumstances.</p>
+          </article>
+          <article class="panel">
+            <h2>Accessibility</h2>
+            <p>Students needing accommodations should contact the instructor and the university accessibility office early in the semester.</p>
+          </article>
+        </section>
       </div>
-    </section>
-
-    <section class="grid grid-two">
-      <article class="panel">
-        <h2>Weekly Expectations</h2>
-        <ol>
-          <li>Read the assigned notes before lecture.</li>
-          <li>Participate in worked examples and proof-based discussions.</li>
-          <li>Complete the weekly problem set with clear written reasoning.</li>
-          <li>Revise solutions after feedback when appropriate.</li>
-        </ol>
-      </article>
-
-      <article class="panel">
-        <h2>Course Support</h2>
-        <ul>
-          <li>Lecture notes and slides will be posted weekly.</li>
-          <li>Office hours are available for conceptual questions and assignment support.</li>
-          <li>Students are encouraged to ask questions on the course forum.</li>
-          <li>Practice problems should be attempted regularly rather than only before exams.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="policies" class="grid grid-three">
-      <article class="panel">
-        <h2>Collaboration Policy</h2>
-        <p>
-          Discussion with classmates is encouraged, but submitted work must be prepared independently.
-          Any external sources, including AI tools, should be acknowledged appropriately.
-        </p>
-      </article>
-
-      <article class="panel">
-        <h2>Late Work Policy</h2>
-        <p>
-          Each student receives three late days for homework. Additional extensions require prior approval
-          or documented circumstances.
-        </p>
-      </article>
-
-      <article class="panel">
-        <h2>Accessibility</h2>
-        <p>
-          Students requiring accommodations should contact the instructor and the university accessibility
-          office early in the term.
-        </p>
-      </article>
-    </section>
+    </div>
   </main>
 
-  <footer class="site-footer site-shell">
-    <p>Discrete Mathematics for Computer Science | Department of Computer Science | Your University</p>
+  <footer class="site-footer">
+    <div class="page-wrap">
+      <p>Discrete Mathematics for Computer Science | Department of Computer Science | Your University</p>
+    </div>
   </footer>
 
   <script src="tabs.js"></script>
