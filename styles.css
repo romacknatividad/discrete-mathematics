@@ -251,12 +251,50 @@ main {
   text-align: center;
 }
 
+.mathematician-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.mathematician-card {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #e2e8ee;
+}
+
+.mathematician-card:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.mathematician-card img {
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
+  border: 1px solid #cfd8e1;
+  background: #f7f9fb;
+}
+
+.mathematician-card h3 {
+  margin-bottom: 0.25rem;
+}
+
+.mathematician-years {
+  margin: 0 0 0.6rem;
+  color: #4b5f73;
+  font-size: 0.95rem;
+}
+
 @media (max-width: 920px) {
   .layout,
   .contents-layout,
   .resource-library-grid,
   .import-grid,
   .policy-grid,
+  .mathematician-grid,
   .header-row {
     grid-template-columns: 1fr;
     display: grid;
@@ -276,5 +314,15 @@ main {
   .panel,
   .topic-content {
     padding: 1rem;
+  }
+
+  .mathematician-card {
+    grid-template-columns: 1fr;
+  }
+
+  .mathematician-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
   }
 }
