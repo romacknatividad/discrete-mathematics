@@ -9,6 +9,13 @@ body {
   background: #ffffff;
 }
 
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
 a {
   color: inherit;
 }
@@ -101,6 +108,10 @@ main {
   padding: 1.2rem;
 }
 
+.resource-library {
+  margin-bottom: 1.5rem;
+}
+
 .panel h2 {
   font-size: 1.3rem;
   padding-bottom: 0.45rem;
@@ -142,6 +153,10 @@ main {
   color: #163a5f;
 }
 
+.section-heading {
+  margin-bottom: 1rem;
+}
+
 .contents-layout {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -152,15 +167,17 @@ main {
 .topic-nav {
   display: grid;
   gap: 0.5rem;
+  align-content: start;
 }
 
 .topic-tab {
+  appearance: none;
+  -webkit-appearance: none;
   width: 100%;
   padding: 0.8rem 0.9rem;
   border: 1px solid #cfd8e1;
   background: #f7f9fb;
   text-align: left;
-  font: inherit;
   color: #1d2731;
   cursor: pointer;
 }
@@ -192,22 +209,28 @@ main {
   margin-top: 0.35rem;
 }
 
+.resource-library-grid,
 .import-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
 }
 
+.resource-box,
 .import-card {
   border: 1px solid #d7e0e8;
   background: #f9fbfc;
   padding: 1rem;
 }
 
+.resource-box h3,
 .import-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
+}
+
+.imported-materials {
+  margin-top: 1rem;
 }
 
 .policy-grid {
@@ -231,6 +254,7 @@ main {
 @media (max-width: 920px) {
   .layout,
   .contents-layout,
+  .resource-library-grid,
   .import-grid,
   .policy-grid,
   .header-row {
